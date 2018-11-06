@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Recipes from './Recipes';
+import Recipes from '../pages/Recipes';
 
 // const RecipeCard = (props) => {
 //   return (
@@ -14,12 +14,13 @@ import Recipes from './Recipes';
 
 class RecipeCard extends Component {
   render() {
+    let { recipe } = this.props
   return (
     <div className="RecipeCard">
       <div>
-      <h2>{this.props.recipe.name}</h2>
-      <img src={this.props.recipe.img}/>
-      <p>{this.props.recipe.ingredients}</p>
+      <h2>{recipe.name}</h2>
+      <img src={recipe.img}/>
+      <p>{recipe.ingredients}</p>
 
       </div>
     </div>
@@ -27,5 +28,4 @@ class RecipeCard extends Component {
 }
 }
 
-
-export default RecipeCard;
+export default RecipeCard

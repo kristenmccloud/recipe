@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Recipes from '../pages/Recipes';
+// import recipes from '../store';
 
 // const RecipeCard = (props) => {
 //   return (

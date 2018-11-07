@@ -28,7 +28,7 @@
 .logospoon{
   height: 80px;
   width: 80px;
-  
+
 }
 
 h1 {
@@ -60,6 +60,11 @@ p {
   box-shadow: 0px 30px 60px;
   image-orientation:
 
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .RecipeCard {

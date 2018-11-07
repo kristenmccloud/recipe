@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import recipes from '../Store';
 import RecipeCard from '../components/RecipeCard';
+import {Link} from 'react-router-dom';
 
 
 class RecipeIndex extends Component {
@@ -10,7 +11,9 @@ class RecipeIndex extends Component {
     let recipesList = recipes.map((recipe, index) => {
       console.log(recipe.name, index)
       return(
-        <RecipeCard recipe={recipe}/>
+        <Link to={`/recipes/${recipe.id}`}>
+          <RecipeCard recipe={recipe}/>
+        </Link>
       )
     })
     console.log(recipesList);
